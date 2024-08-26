@@ -48,7 +48,8 @@ In this project, we will be deploying a locally developed group chat app made wi
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_3.webp)
 
 ### Step 2: Create an Access key from the security credential section of the newly created user. ###
-  Make sure you downloaded the .csv file or note the data some where else, Because we can see it only once.<br/>-----
+  Make sure you downloaded the .csv file or note the data some where else, Because we can see it only once.<br/>
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/access_key.webp)
 
 ### Step 3: Create an S3 bucket. ###
