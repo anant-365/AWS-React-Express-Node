@@ -42,13 +42,16 @@ In this project, we will be deploying a locally developed group chat app made wi
 ## Steps to follow (FRONT-END PART)
 
 ### Step 1: Creating an IAM user. ###
-  Create an IAM user and attach the AmazonS3FullAccess policy.<br/>-----
+  Create an IAM user and attach the AmazonS3FullAccess policy.<br/>
+  
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_2.webp)
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_3.webp)
 
 ### Step 2: Create an Access key from the security credential section of the newly created user. ###
   Make sure you downloaded the .csv file or note the data some where else, Because we can see it only once.<br/>
+  
   -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/access_key.webp)
 
