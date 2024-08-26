@@ -170,6 +170,25 @@ jobs:
   After visiting the link you can see that your React application is live now. Whenever you change your code and push it to GitHub, you will see new changes here within a few seconds.<br/><br/>
   NOTE - EITHER YOU CAN ADD YOUR CUSTOM CODE FOR MAKING DESIRED FRONT-END OR ADD THE REACT CODE FROM REACT-FRONTEND FOLDER PRESENT IN THIS REPOSITORY. 
 
+  ### Step 11: Deploy React App to CloudFront. ###
+  We need to create a CDN that will speed up the distribution of our website content by routing user requests through the AWS network.<br/>
+  - Search for Cloudfront in the AWS console.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/cloudFront_1.webp)
+  - Select “Create distribution” button.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/cloudFront_2.webp)
+  - Input the URL link to our S3 bucket under the origin domain.
+  - You can leave the other options as the default.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/cloudFront_3.webp)
+  - Scroll to the bottom of the page under setting and input the CNAME
+  - I will be using the root domain name and www subdomain name: “www.mypetstore.cloud” and “mypetstore.cloud”
+  - Since we want to use HTTPS for this project, we will need to add a certificate
+  - So, proceed to the “Request certificate” link just below that.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/cloudFront_4.webp)
+  - If the custom domain is not available we can skip the request certificate step ( YOU CAN DO THAT IF YOU WANT, I DIDN'T REQUEST THE CERTIFICATE FOR MY PROJECT ).
+  - Leave rest as default and create the distribution.
+  - Copy the distribution domain name and paste it in your browser search bar and search it.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/cloudFront_4.webp)
+  - Awesome! As seen in the above image, we can now load the website with https enabled.
 
 
 
