@@ -44,6 +44,45 @@ In this project, we will be deploying a locally developed group chat app made wi
 ### Step 1: Creating an IAM user. ###
   Create an IAM user and attach the AmazonS3FullAccess policy.
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_2.webp)
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_3.webp)
+
+### Step 2: Create an Access key from the security credential section of the newly created user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 3: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 4: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 5: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 6: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 7: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 8: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 9: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
+### Step 10: Creating an IAM user. ###
+  Create an IAM user and attach the AmazonS3FullAccess policy.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+
 
 
 
