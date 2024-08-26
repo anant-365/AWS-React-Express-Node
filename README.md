@@ -174,6 +174,8 @@ jobs:
   ### Step 11: Deploy React App to CloudFront. ###
   We need to create a CDN that will speed up the distribution of our website content by routing user requests through the AWS network.<br/>
   - Search for Cloudfront in the AWS console.
+
+-----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/cloudFront_1.webp)
 
 -----
