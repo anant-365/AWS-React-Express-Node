@@ -42,17 +42,17 @@ In this project, we will be deploying a locally developed group chat app made wi
 ## Steps to follow (FRONT-END PART)
 
 ### Step 1: Creating an IAM user. ###
-  Create an IAM user and attach the AmazonS3FullAccess policy.
+  Create an IAM user and attach the AmazonS3FullAccess policy.<br/>
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_2.webp)
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_3.webp)
 
 ### Step 2: Create an Access key from the security credential section of the newly created user. ###
-  Make sure you downloaded the .csv file or note the data some where else, Because we can see it only once.
+  Make sure you downloaded the .csv file or note the data some where else, Because we can see it only once.<br/>
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/access_key.webp)
 
 ### Step 3: Create an S3 bucket. ###
-  Give a name to the bucket and enable ACLs.
+  Give a name to the bucket and enable ACLs.<br/>
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_1.webp)<br/><br/>Untick Block all public access and tick the warning after reading it.
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_2.webp)
 
@@ -63,10 +63,10 @@ In this project, we will be deploying a locally developed group chat app made wi
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_2.webp)
 
 ### Step 6: Click on the new repository secret and add all details. ###
-  add AWS S3 Bucket name as AWS_S3_BUCKET
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_3.webp)<br/><br/>add AWS access key as AWS_ACCESS_KEY_ID
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_4.webp)<br/><br/>add AWS secret key as AWS_SECRET_ACCESS_KEY
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/access_secret_repo.webp)<br/><br/>After creating this, you can see like this
+  add AWS S3 Bucket name as AWS_S3_BUCKET<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_3.webp)<br/><br/>add AWS access key as AWS_ACCESS_KEY_ID<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_4.webp)<br/><br/>add AWS secret key as AWS_SECRET_ACCESS_KEY<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/access_secret_repo.webp)<br/><br/>After creating this, you can see like this<br/>
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_5.webp)
 
 ### Step 7: Create React app and add a GitHub Actions workflow. ###
@@ -74,7 +74,7 @@ In this project, we will be deploying a locally developed group chat app made wi
    npm create vite@latest
 ```
    <br/> After creating a React app, add one folder “.github\workflows” and add a new file in it and name it “main.yaml”. Copy the below code into the main.yaml file:<br/>
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/workflow.webp)
 
 ### Step 8: Creating an IAM user. ###
   Create an IAM user and attach the AmazonS3FullAccess policy.
