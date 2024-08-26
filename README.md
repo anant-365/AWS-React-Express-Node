@@ -4,11 +4,11 @@
 In this project, we will be deploying a locally developed group chat app made with react as front-end, node as back-end and using AWS services like lambda functions for backend and s3 for front-end to make the web app publically accessible.<br/>
 ___NOTE - TO MAKE THIS PROJECT, YOU DON’T HAVE TO USE THE CODE BASE PROVIDED IN THIS REPO. YOU ARE FREE TO CHOOSE YOUR OWN CUSTOM FRONT-END AND BACK-END CODE BASE. HOWEVER, MAKE SURE TO FOLLOW THE STEPS CAREFULLY, BE AWARE OF THE CUSTOMIZATIONS YOU ARE MAKING TO THESE STEPS, AND KNOW HOW TO FIX ANY ERRORS THAT MAY ARISE FROM THOSE CUSTOMIZATIONS.___
 
-**App Preview**
+## App Preview
 
 ![App Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-26%20212032.png)
 
-**Architecture**
+## Architecture
 
 ![App Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/AWS_React_Node%20Project%20Workflow%20Flowchart.png)
 
