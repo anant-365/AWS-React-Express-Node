@@ -33,7 +33,7 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 **Github Account:** GitHub account for repository hosting and GitHub Actions.
 
-**AWS Account:** AWS S3 for hosting the React.js application and lambda functions for deploying the node backend.
+**AWS Account:** AWS S3 for hosting the React.js application and lambda functions for deploying the node backend (MAKE SURE TO LOGIN IN YOUR AWS ACCOUNT TO PERFORM AWS RELATED STEPS).
 
 **Other Requirements:** Access and permissions for GitHub and AWS S3 and lambda functions, Familiarity with YAML configuration, Command-line interface (CLI) proficiency.
 
@@ -193,7 +193,7 @@ jobs:
 -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/cloudFront_4.webp)
 -----
-  - If the custom domain is not available we can skip the request certificate step ( YOU CAN DO THAT IF YOU WANT, I DIDN'T REQUEST THE CERTIFICATE FOR MY PROJECT ).
+  - If the custom domain is not available we can skip the request certificate step ( YOU CAN REQUEST CERTIFICATE IF YOU WANT, I DIDN'T REQUEST THE CERTIFICATE FOR MY PROJECT ).
   - Leave rest as default and create the distribution.
   - Copy the distribution domain name and paste it in your browser search bar and search it.
 -----
@@ -204,9 +204,18 @@ jobs:
 
 
 
-## Deployment
+## Steps to follow (BACK-END PART)
 
-To deploy this project run the code in lambda function 
+- To deploy the back-end first zip the node code ___( MAKE SURE THE ZIPPED FOLDER DONOT CONTAIN ANOTHER FOLDER INSIDE, ALL THE CODE WITH NODE MODULES FOLDER SHOULD BE IN THE ROOT ZIPPED FOLDER ITSELF )___.
+- Make a Separate S3 bucket for backend.
+- Upload the node zip file to backend s3 bucket.
+- Now go to lambda function and upload the code via s3 backend bucket. ___( MAKE SURE TO UPLOAD THE NODE MODULES FOLDER IN THE ZIP NODE FILE, OTHERWISE WE MAY ENCOUNTER AN ERROR )___
+
+
+
+## Steps to follow (AWS API GATEWAY - WEBSOCKET API)
+- Follow along with the steps shown in images below :-
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-26%20212032.png)
 
 ```bash
  import json
