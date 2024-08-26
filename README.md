@@ -13,32 +13,38 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 
 
-## Steps 
- we'll be going through the following steps.
+## Objectives
 
-1.Creating an Amazon S3 Bucket
+1.Simplify the deployment process for React.js applications.
 
-2.Uploading images to the S3 Bucket.
+2.Automate deployment pipeline using GitHub Actions.
 
-3.Installing configuring the AWS Command line interface (CLI)
+3.Enable scalable hosting of React.js apps on AWS S3.
 
-4.Importing libraries
+4.Deliver exceptional user experiences through reliable deployments.
 
-5.Adding detect_labels function
-
-6.Adding main function
-
-7.Running your python file
+5.Empower developers with knowledge and tools for efficient deployment and hosting.
 
 
-## Services Used
-**Amazon S3:** For storing the images in the process of generating labels.
 
-**Amazon Rekognition:** To analyse images and generate image labels.
+## Prerequisites
+**React.js/Node:** Basic understanding of React.js and Node/Express.
 
-**AWS CLI:** Interacting with AWS services through command line interface(CLI)
+**Github Account:** GitHub account for repository hosting and GitHub Actions.
+
+**AWS Account:** AWS S3 for hosting the React.js application and lambda functions for deploying the node backend.
+
+**Other Requirements:** Access and permissions for GitHub and AWS S3 and lambda functions, Familiarity with YAML configuration, Command-line interface (CLI) proficiency.
 
 Also, used parallelly IAM roles and user to gain access to the services, and Lambda.
+
+
+
+## Steps to follow (FRONT-END PART)
+
+
+
+
 ## Deployment
 
 To deploy this project run the code in lambda function 
