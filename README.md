@@ -21,9 +21,9 @@ In this project, we will be deploying a locally developed group chat app made wi
     - [Step 9: Go to the Action section and see the process.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-9-go-to-the-action-section-and-see-the-process)
     - [Step 10: Configure S3 for web hosting.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-10-configure-s3-for-web-hosting)
     - [Step 11: Deploy React App to CloudFront.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-11-deploy-react-app-to-cloudfront)
-  - [Steps to follow (BACK-END PART)](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#steps-to-follow-back-end-part)
-  - [Steps to follow (AWS API GATEWAY - WEBSOCKET API)](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#steps-to-follow-aws-api-gateway---websocket-api)
-  - [Conclusion](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#conclusion)
+- [Steps to follow (BACK-END PART)](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#steps-to-follow-back-end-part)
+- [Steps to follow (AWS API GATEWAY - WEBSOCKET API)](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#steps-to-follow-aws-api-gateway---websocket-api)
+- [Conclusion](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#conclusion)
 
 ## App Preview
 
