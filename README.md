@@ -5,7 +5,7 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 **App Preview**
 
-![App Screenshot](https://cdn.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/https://cdn.filestackcontent.com/oUZkkh6QbK56fDnYAhoG)
+![App Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-26%20212032.png)
 
 **Architecture**
 
