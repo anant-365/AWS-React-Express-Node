@@ -53,7 +53,12 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 ### Step 3: Create an S3 bucket. ###
   Give a name to the bucket and enable ACLs.<br/>
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_1.webp)<br/><br/>Untick Block all public access and tick the warning after reading it.
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_1.webp)<br/><br/>
+
+  -----
+  Untick Block all public access and tick the warning after reading it.
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_2.webp)
 
 ### Step 4: Create a new repo in GitHub with public access. ###
@@ -64,9 +69,24 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 ### Step 6: Click on the new repository secret and add all details. ###
   add AWS S3 Bucket name as AWS_S3_BUCKET<br/>
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_3.webp)<br/><br/>add AWS access key as AWS_ACCESS_KEY_ID<br/>
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_4.webp)<br/><br/>add AWS secret key as AWS_SECRET_ACCESS_KEY<br/>
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/access_secret_repo.webp)<br/><br/>After creating this, you can see like this<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_3.webp)<br/><br/>
+  
+  -----
+  add AWS access key as AWS_ACCESS_KEY_ID<br/>
+
+  -----
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_4.webp)<br/><br/>
+  
+  -----
+  add AWS secret key as AWS_SECRET_ACCESS_KEY<br/>
+
+  -----
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/access_secret_repo.webp)<br/><br/>
+  
+  -----
+  After creating this, you can see like this<br/>
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_5.webp)
 
 ### Step 7: Create React app and add a GitHub Actions workflow. ###
