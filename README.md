@@ -11,6 +11,19 @@ In this project, we will be deploying a locally developed group chat app made wi
 - [Prerequisites](https://github.com/anant-365/AWS-React-Express-Node#prerequisites)
 - [Steps to follow (FRONT-END PART)](https://github.com/anant-365/AWS-React-Express-Node#steps-to-follow-front-end-part)
     - [Step 1: Creating an IAM user.](https://github.com/anant-365/AWS-React-Express-Node#step-1-creating-an-iam-user)
+    - [Step 2: Create an Access key from the security credential section of the newly created user.](https://github.com/anant-365/AWS-React-Express-Node#step-2-create-an-access-key-from-the-security-credential-section-of-the-newly-created-user)
+    - [Step 3: Create an S3 bucket.](https://github.com/anant-365/AWS-React-Express-Node#step-3-create-an-s3-bucket)
+    - [Step 4: Create a new repo in GitHub with public access.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-4-create-a-new-repo-in-github-with-public-access)
+    - [Step 5: Go to the settings of your repo and select the secrets from the left section.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-5-go-to-the-settings-of-your-repo-and-select-the-secrets-from-the-left-section)
+    - [Step 6: Click on the new repository secret and add all details.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-6-click-on-the-new-repository-secret-and-add-all-details)
+    - [Step 7: Create React app and add a GitHub Actions workflow.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-7-create-react-app-and-add-a-github-actions-workflow)
+    - [Step 8: Add it to GitHub.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-8-add-it-to-github)
+    - [Step 9: Go to the Action section and see the process.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-9-go-to-the-action-section-and-see-the-process)
+    - [Step 10: Configure S3 for web hosting.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-10-configure-s3-for-web-hosting)
+    - [Step 11: Deploy React App to CloudFront.](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#step-11-deploy-react-app-to-cloudfront)
+  - [Steps to follow (BACK-END PART)](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#steps-to-follow-back-end-part)
+  - [Steps to follow (AWS API GATEWAY - WEBSOCKET API)](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#steps-to-follow-aws-api-gateway---websocket-api)
+  - [Conclusion](https://github.com/anant-365/AWS-React-Express-Node?tab=readme-ov-file#conclusion)
 
 ## App Preview
 
@@ -270,6 +283,10 @@ ___NOTE - WHILE CHOOSING THE LAMBDA FUNCTION ARN, MAKE SURE TO SELECT THE ONE WE
 ## Conclusion
 
 -----
-### By following this guide, you will have successfully deployed a React application to AWS S3 and a Node backend to AWS Lambda using GitHub Actions. This setup not only simplifies the deployment process but also ensures a scalable and reliable hosting environment. Feel free to customize the code base as per your requirements, but always be mindful of the steps and potential errors that may arise. Happy coding! ###
+#### By following this guide, you will have successfully deployed a React application to AWS S3 and a Node backend to AWS Lambda using GitHub Actions. This setup not only simplifies the deployment process but also ensures a scalable and reliable hosting environment. Feel free to customize the code base as per your requirements, but always be mindful of the steps and potential errors that may arise. Happy coding! ####
+
+-----
+___Github Repository: [AWS-React-Express-Node](https://github.com/anant-365/AWS-React-Express-Node/)___
+___Github Account: [anant-365](https://github.com/anant-365/)___
 
 
