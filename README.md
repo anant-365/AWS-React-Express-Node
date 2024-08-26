@@ -75,19 +75,70 @@ In this project, we will be deploying a locally developed group chat app made wi
 ```
    <br/> After creating a React app, add one folder “.github\workflows” and add a new file in it and name it “main.yaml”. Copy the below code into the main.yaml file:<br/>
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/workflow.webp)
+  ```bash
+   name: Upload Website
 
-### Step 8: Creating an IAM user. ###
-  Create an IAM user and attach the AmazonS3FullAccess policy.
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
-### Step 9: Creating an IAM user. ###
-  Create an IAM user and attach the AmazonS3FullAccess policy.
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-### Step 10: Creating an IAM user. ###
-  Create an IAM user and attach the AmazonS3FullAccess policy.
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/iam_1.webp)
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+
+      - name: Change ownership of node_modules
+        run: sudo chown -R $USER:$USER ./node_modules
+
+      - name: Set permissions for node_modules
+        run: chmod -R 755 ./node_modules
+
+      - name: Build app
+        run: npm run build
+
+      - name: Upload to S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read
+        env:
+          SOURCE_DIR: dist/
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+```
+
+### Step 8: Add it to GitHub. ###
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/repo_6_add.webp)
+
+### Step 9: Go to the Action section and see the process. ###
+  After uploading the code go to the Action section and see how GitHub Actions builds and uploads the code to S3. It will take some time initially but after the first push, time will reduce because there will be 
+  fewer changes compared to the first time.<br/>
+  After clicking on it, you can see your recent commit. Click on it and then click on build. You can see all processes which are going on. After finishing all processes, you will see this:<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/gh_actions_1.webp)
+
+### Step 10: Configure S3 for web hosting. ###
+  You can see all uploaded files from GitHub here.<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_3_hosting.webp)<br/>
+  Now go to the Properties section and scroll down to the end. You can see the Static website hosting option. Click on edit and enable it and write index.html in the index document section. Then save changes.<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_4_hosting.webp)<br/>
+  Now you can see a link in the static website hosting section. Open it in a new tab.<br/>
+  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/s3_5_hosting.webp)<br/>
+  After visiting the link you can see that your React application is live now. Whenever you change your code and push it to GitHub, you will see new changes here within a few seconds.<br/><br/>
+  NOTE - EITHER YOU CAN ADD YOUR CUSTOM CODE FOR MAKING DESIRED FRONT-END OR ADD THE REACT CODE FROM REACT-FRONTEND FOLDER PRESENT IN THIS REPOSITORY. 
 
 
 
