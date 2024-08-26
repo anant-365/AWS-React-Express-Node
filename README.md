@@ -41,8 +41,8 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 ## Steps to follow (FRONT-END PART)
 
-**Step 1: Creating an IAM user**
-Create an IAM user and attach the AmazonS3FullAccess policy.
+**Step 1: Creating an IAM user.**
+  Create an IAM user and attach the AmazonS3FullAccess policy.
 
 
 
