@@ -2,6 +2,7 @@
 # Deploying a React App to AWS S3 with GitHub Actions and Hosting It / Also deploying the node backend to AWS Lambda functions.
 
 In this project, we will be deploying a locally developed group chat app made with react as front-end, node as back-end and using AWS services like lambda functions for backend and s3 for front-end to make the web app publically accessible.
+___NOTE - TO MAKE THIS PROJECT, YOU DON’T HAVE TO USE THE CODE BASE PROVIDED IN THIS REPO. YOU ARE FREE TO CHOOSE YOUR OWN CUSTOM FRONT-END AND BACK-END CODE BASE. HOWEVER, MAKE SURE TO FOLLOW THE STEPS CAREFULLY, BE AWARE OF THE CUSTOMIZATIONS YOU ARE MAKING TO THESE STEPS, AND KNOW HOW TO FIX ANY ERRORS THAT MAY ARISE FROM THOSE CUSTOMIZATIONS.___
 
 **App Preview**
 
@@ -214,129 +215,51 @@ jobs:
 
 
 ## Steps to follow (AWS API GATEWAY - WEBSOCKET API)
-- Follow along with the steps shown in images below :-
+- Follow along with the steps shown in images below :-<br/>
+___NOTE - WHILE CHOOSING THE LAMBDA FUNCTION ARN, MAKE SURE TO SELECT THE ONE WE CREATED IN THE PREVIOUS BACK-END SECTION.___
 
 -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20172327.png)
+  
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20172508.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20172530.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20172657.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20172931.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20173010.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20173113.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20173347.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20173729.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20173750.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20180723.png)
+
+  -----
   ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-22%20180907.png)
-  ![Project Screenshot](https://github.com/anant-365/AWS-React-Express-Node/blob/main/Readme_images/Screenshot%202024-08-26%20212032.png)
 
-```bash
- import json
- import boto3
-
-def lambda_handler(event, context):
-    
-    client = boto3.client("rekognition")
-    
-    response = client.detect_labels(Image={"S3Object": {"Bucket":"imgbucket1234", "Name": "img1.jpg"}}, MaxLabels=3 ,MinConfidence= 80
-    )
-    print (response)
-```
+-----
 
 
-## Result
-Function Logs
-START RequestId: 41176eda-ca87-4aa3-b20e-a9dae275d24d Version: $LATEST
+## Conclusion
 
-**{'Labels': [{'Name': 'License Plate', 'Confidence': 99.9888916015625, 'Instances': [], 'Parents': [{'Name': 'Transportation'}, {'Name': 'Vehicle'}], 'Aliases': [], 'Categories':
- [{'Name': 'Vehicles and Automotive'}]}, {'Name': 'Road', 'Confidence': 99.96435546875, 'Instances': [], 'Parents': [], 'Aliases': [], 'Categories': [{'Name': 'Transport and Logistics'}]}, {'Name': 'City', 'Confidence': 99.92589569091797, 'Instances': [], 'Parents': [], 'Aliases': [{'Name': 'Town'}],**
- 
-
-END RequestId: 41176eda-ca87-4aa3-b20e-a9dae275d24d
-REPORT RequestId: 41176eda-ca87-4aa3-b20e-a9dae275d24d	Duration: 2968.59 ms	Billed Duration: 2969 ms	Memory Size: 128 MB	Max Memory Used: 76 MB	Init Duration: 310.23 ms
-## Detailed Steps
-
-1. First login to your aws account
-
-2. Download python and pip in your device alongwith aws cli 
-
-3. Make iam user to gain the necessary credentials to configure cli 
-
-4. Install boto3 
-
-5. Make a bucket in S3 to store the images
-
-6. Make a role with iam to gain access to all corresponding services like rekognition
-
-7. We can always trigger the event to lambda where as you add the image to bucket it automatically analyses it.         
-## Code Explanation
-
-Explanation of Code:
-
-1.Initialize Rekognition Client: rekognition = boto3.client('rekognition') initializes the client to interact with the Rekognition service.
-
-2.Loading Image: The image is read as bytes since Rekognition accepts image data in byte format.
-
-3.Rekognition API Call: detect_labels() sends the image to Rekognition using detect_labels() API call, which returns labels (objects, scenes, and concepts) detected in the image.
-
-4.Result: The detected labels are printed, including the name and confidence level.
-## Screenshots
+-----
+### By following this guide, you will have successfully deployed a React application to AWS S3 and a Node backend to AWS Lambda using GitHub Actions. This setup not only simplifies the deployment process but also ensures a scalable and reliable hosting environment. Feel free to customize the code base as per your requirements, but always be mindful of the steps and potential errors that may arise. Happy coding! ###
 
 
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0022.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0011.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0025.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0034.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0010.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0013.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0029.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0014.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0015.jpg?raw=true)
-
-
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0018.jpg?raw=true)
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0019.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0024.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0017.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0016.jpg?raw=true)
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0021.jpg?raw=true)
-
-![App Screenshot](https://github.com/2ananya/AWS-Project-Rekognition-/blob/main/IMG-20240826-WA0026.jpg?raw=true)
-This is how rekognition works by itself on the same image used.
-
-
-
-
-
-
-
-
-
-
-
-
-## Possible Use Cases
-
-1. **Content Moderation**
-2. **E-commerce Automation**
-3. **Image Search & Discovery**
-4. **Social Media Tagging**
-5. **Digital Asset Management**
-6. **Photo Organization**
-7. **Marketing & Ad Targeting**
-8. **Surveillance & Security**
-9. **Wildlife & Environmental Monitoring**
-10. **Medical Imaging Analysis**
