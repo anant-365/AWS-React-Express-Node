@@ -1,7 +1,12 @@
 
-# Deploying a React App to AWS S3 with GitHub Actions and Hosting It/ Also deploying the node backend to AWS Lambda functions.
+# Deploying a React App to AWS S3 with GitHub Actions and Hosting It / Also deploying the node backend to AWS Lambda functions.
 
 In this project, we will be deploying a locally developed group chat app made with react as front-end node as back-end and using AWS services like lambda functions for backend and s3 for front-end to make the web app publically accessible.
+
+**App Preview**
+
+![App Screenshot](https://cdn.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/https://cdn.filestackcontent.com/oUZkkh6QbK56fDnYAhoG)
+
 **Architecture**
 
 ![App Screenshot](https://cdn.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/https://cdn.filestackcontent.com/oUZkkh6QbK56fDnYAhoG)
