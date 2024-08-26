@@ -37,15 +37,15 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 ## Objectives
 
-1.Simplify the deployment process for React.js applications.
+- Simplify the deployment process for React.js applications.
 
-2.Automate deployment pipeline using GitHub Actions.
+- Automate deployment pipeline using GitHub Actions.
 
-3.Enable scalable hosting of React.js apps on AWS S3.
+- Enable scalable hosting of React.js apps on AWS S3.
 
-4.Deliver exceptional user experiences through reliable deployments.
+- Deliver exceptional user experiences through reliable deployments.
 
-5.Empower developers with knowledge and tools for efficient deployment and hosting.
+- Empower developers with knowledge and tools for efficient deployment and hosting.
 
 
 
