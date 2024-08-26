@@ -286,7 +286,7 @@ ___NOTE - WHILE CHOOSING THE LAMBDA FUNCTION ARN, MAKE SURE TO SELECT THE ONE WE
 #### By following this guide, you will have successfully deployed a React application to AWS S3 and a Node backend to AWS Lambda using GitHub Actions. This setup not only simplifies the deployment process but also ensures a scalable and reliable hosting environment. Feel free to customize the code base as per your requirements, but always be mindful of the steps and potential errors that may arise. Happy coding! ####
 
 -----
-___Github Repository: [AWS-React-Express-Node](https://github.com/anant-365/AWS-React-Express-Node/)___
+___Github Repository: [AWS-React-Express-Node](https://github.com/anant-365/AWS-React-Express-Node/)___<br/>
 ___Github Account: [anant-365](https://github.com/anant-365/)___
 
 
