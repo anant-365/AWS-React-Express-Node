@@ -28,6 +28,7 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 
 ## Prerequisites
+
 **React.js/Node:** Basic understanding of React.js and Node/Express.
 
 **Github Account:** GitHub account for repository hosting and GitHub Actions.
@@ -36,11 +37,12 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 **Other Requirements:** Access and permissions for GitHub and AWS S3 and lambda functions, Familiarity with YAML configuration, Command-line interface (CLI) proficiency.
 
-Also, used parallelly IAM roles and user to gain access to the services, and Lambda.
-
 
 
 ## Steps to follow (FRONT-END PART)
+
+**Step 1: Creating an IAM user**
+Create an IAM user and attach the AmazonS3FullAccess policy.
 
 
 
