@@ -51,13 +51,13 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 ## Prerequisites
 
-**React.js/Node:** Basic understanding of React.js and Node/Express.
+- **React.js/Node:** Basic understanding of React.js and Node/Express.
 
-**Github Account:** GitHub account for repository hosting and GitHub Actions.
+- **Github Account:** GitHub account for repository hosting and GitHub Actions.
 
-**AWS Account:** AWS S3 for hosting the React.js application and lambda functions for deploying the node backend (MAKE SURE TO LOGIN IN YOUR AWS ACCOUNT TO PERFORM AWS RELATED STEPS).
+- **AWS Account:** AWS S3 for hosting the React.js application and lambda functions for deploying the node backend (MAKE SURE TO LOGIN IN YOUR AWS ACCOUNT TO PERFORM AWS RELATED STEPS).
 
-**Other Requirements:** Access and permissions for GitHub and AWS S3 and lambda functions, Familiarity with YAML configuration, Command-line interface (CLI) proficiency.
+- **Other Requirements:** Access and permissions for GitHub and AWS S3 and lambda functions, Familiarity with YAML configuration, Command-line interface (CLI) proficiency.
 
 
 
