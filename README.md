@@ -55,7 +55,7 @@ In this project, we will be deploying a locally developed group chat app made wi
 
 - **Github Account:** GitHub account for repository hosting and GitHub Actions.
 
-- **AWS Account:** AWS S3 for hosting the React.js application and lambda functions for deploying the node backend (MAKE SURE TO LOGIN IN YOUR AWS ACCOUNT TO PERFORM AWS RELATED STEPS).
+- **AWS Account:** AWS S3 for hosting the React.js application and lambda functions for deploying the node backend ___(MAKE SURE TO LOGIN IN YOUR AWS ACCOUNT TO PERFORM AWS RELATED STEPS)___.
 
 - **Other Requirements:** Access and permissions for GitHub and AWS S3 and lambda functions, Familiarity with YAML configuration, Command-line interface (CLI) proficiency.
 
